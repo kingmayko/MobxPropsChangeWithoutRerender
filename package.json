@@ -53,7 +53,7 @@
   "dependencies": {
     "material-ui": "^0.15.4",
     "mobx": "^2.4.4",
-    "mobx-react": "^3.5.5",
+    "mobx-react": "^3.5.8",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-tap-event-plugin": "^1.0.0"

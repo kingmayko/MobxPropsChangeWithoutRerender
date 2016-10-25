@@ -1,0 +1,41 @@
+[33mcommit 819eff780750a472537d03263116075c0e55cc74[m
+Author: mattiamanzati <manzati.mattia@gmail.com>
+Date:   Fri Sep 2 08:45:20 2016 +0200
+
+    fix: remove type annotation
+
+[33mcommit fb3b764a5e4270c447a398f97c5c01aa1c988614[m
+Author: Mattia Manzati <mattia.manzati@gmail.com>
+Date:   Sat Aug 27 19:47:39 2016 +0200
+
+    fix: wrong build folder
+
+[33mcommit b3b6711566fe4e7bcc25e5d1d18c5f412c8e4826[m
+Author: Mattia Manzati <mattia.manzati@gmail.com>
+Date:   Sat Aug 27 19:44:56 2016 +0200
+
+    feat: switch to create-react-app
+
+[33mcommit d772344a6819fdfb2b7cc87ee18a92305f3f4513[m
+Author: Mattia Manzati <mattia.manzati@gmail.com>
+Date:   Sat Aug 27 17:30:24 2016 +0200
+
+    fix: list
+
+[33mcommit c4b0bff4c78103cc1f0b5c1275d18809f85520a5[m
+Author: Mattia Manzati <mattia.manzati@gmail.com>
+Date:   Sat Aug 27 17:29:23 2016 +0200
+
+    feat: add links
+
+[33mcommit 89bfedde70e9b58fe0acb1a712936ad0c12e567c[m
+Author: Mattia Manzati <mattia.manzati@gmail.com>
+Date:   Sat Aug 27 17:24:38 2016 +0200
+
+    feat: first commit
+
+[33mcommit 4561ba0cd7482449d43eeb136f8054435a6b16a2[m
+Author: mattiamanzati <manzati.mattia@gmail.com>
+Date:   Sat Aug 27 17:20:13 2016 +0200
+
+    Initial commit
