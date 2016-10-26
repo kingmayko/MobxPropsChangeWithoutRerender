@@ -21,6 +21,7 @@ export class Todo{
     // observable values changes. For example we use it to determine whenever the todo is valid
     @computed get isValid(){
         // a text is required
+        console.log('????? is va');
         return this.text !== ''
     }
 
@@ -40,5 +41,11 @@ export class Todo{
         todo.text = json['text'] || ''
         todo.done = json['done'] || false
         return todo
+    }
+
+    static update(old:this,newTodo:this) {
+        old.id = newTodo.id;
+        old.text = newTodo.text;
+        old.done = newTodo.done;
     }
 }

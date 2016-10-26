@@ -1,26 +1,31 @@
 // import needed libraries
 import React from 'react'
 import {render} from 'react-dom'
-
+import TextField from 'material-ui/TextField'
 // import the view and the viewModel
 import {TodoView} from './TodoView.material'
 import {TodoViewModel} from './TodoViewModel'
 
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import {observer,inject,Provider} from 'mobx-react';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 // Needed for onTouchTap by material-ui
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
 // create a viewModel singleton
-const model = new TodoViewModel()
+const model = new TodoViewModel();
 
 
 
 // render the editor
 render(
-	<TodoView model={model} /> 
+	<MuiThemeProvider>
+		<div> 
+			<TextField  name="text" type="text" />
+			<TodoView model={model} /> 
+		</div>
+	</MuiThemeProvider>
 , document.getElementById('root'))
 
 

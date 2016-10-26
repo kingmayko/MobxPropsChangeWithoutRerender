@@ -61,4 +61,22 @@ export class TodoViewModel{
             )
         }
     }
+
+
+    @action
+    changeTodo(todo,replaceTodo) {
+        const index = this.todos.indexOf(todo)
+        if(index > -1){
+            Todo.update(this.todos[index],replaceTodo);
+            console.log('todo update ok -'+JSON.stringify(this.todos[index]));
+        }
+    }
+
+    @action
+    show(todo) {
+          const index = this.todos.indexOf(todo)
+             if(index > -1){
+                 console.log('mobx todo = '+JSON.stringify(this.todos[index] ));
+            }
+    }
 }
