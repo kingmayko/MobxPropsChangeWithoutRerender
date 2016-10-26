@@ -56,6 +56,7 @@ export class TodoView extends React.Component{
     // // and decorate it with observer. This way updates in the single todo will result in an update of the SingleTodoView.
     @observer
     export class SingleTodoView extends React.Component {
+        @observable todo = null;
 
         constructor(props) {
             super(props);
@@ -63,9 +64,9 @@ export class TodoView extends React.Component{
         }
 
        componentDidMount() {
-           document.getElementById(this.props.todo.id).value = this.props.todo.text;
-           document.getElementById('tablerow').striped = this.props.todo.done;
-           document.getElementById('checkbox').checked= this.props.todo.done;
+           document.getElementById(this.props.todo.id).value = this.todo.text;
+           document.getElementById('tablerow').striped = this.todo.done;
+           document.getElementById('checkbox').checked= this.todo.done;
        }
 
        //  for if have the btn to update the todo at onces instead of use onCheck or onChange to change parameter of todo
